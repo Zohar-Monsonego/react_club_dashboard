@@ -4,8 +4,12 @@
 
 /* the <header> wrapper */
 .header {
+  text-align: center;
 }
 
 /* the <h1> - big, centered, bold */
 .title {
+  color: rgb(19, 19, 83);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
 }

@@ -4,26 +4,49 @@
 
 /* the whole panel */
 .tasksPanel {
+  background-color: white;
+  width: 30%;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 200px;
 }
 
 /* the title with the member name */
 .title {
+  color: rgb(19, 19, 83);
+  font-weight: bold;
+  font-size: 18px;
 }
 
 /* the list of tasks */
 .tasks {
+  display: flex;
 }
 
 /* one task */
 .task {
+  color: rgb(21, 21, 21);
+  font-size: 15px;
+  border-bottom: 1px solid rgb(232, 229, 229);
+  height: 40px;
+  display: flex;
+  align-items: center;
 }
 
 /* a done task (e.g. line-through) */
 .done {
+  text-decoration: line-through;
+  color: rgb(205, 200, 200);
 }
 
 /* the messages "Select a member..." / "No tasks yet" */
 .empty {
+  color: rgb(199, 195, 195);
+  justify-self: center;
 }
 
 /* bonus: the done/total counter */
@@ -32,4 +55,27 @@
 
 /* bonus: the quick add form */
 .quickAdd {
+  width: 80%;
+  height: 30px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 1px solid rgb(199, 195, 195);
+  padding-left: 10px;
+}
+
+.add_task_div {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.add_task_button {
+  width: 40px;
+  height: 30px;
+  margin-top: 10px;
+  border-radius: 10px;
+  background: none;
+  background-color: rgb(19, 19, 83);
+  color: white;
+  border: none;
 }

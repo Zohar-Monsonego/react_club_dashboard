@@ -8,4 +8,10 @@
 
 /* the area with the members and the tasks panel */
 .content {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+  margin: 30px auto;
 }

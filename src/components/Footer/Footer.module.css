@@ -4,4 +4,7 @@
 
 /* the <footer> - small, centered, gray text */
 .footer {
+  text-align: center;
+  color: rgb(156, 152, 152);
+  margin-top: 1%;
 }

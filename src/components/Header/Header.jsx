@@ -2,8 +2,10 @@
 // Renders an <h1> with the text: Campus Club Dashboard
 import styles from './Header.module.css'
 
-export default function Header() {
-  // TODO: <header> with an <h1>
-  // Use the classes from Header.module.css, e.g. className={styles.title}
-  return null
+export default function Header(props) {
+  return (
+    <header className={styles.header}>
+      <h1 className={styles.title}>{props.header_title}</h1>
+    </header>
+  )
 }
