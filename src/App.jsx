@@ -7,6 +7,7 @@ import FilterBar from './components/FilterBar/FilterBar.jsx'
 import { useState } from 'react'
 import MemberList from './components/MembersList/MembersList.jsx'
 import TasksPanel from './components/TasksPanel/TasksPanel.jsx'
+import Notice from './components/Notice/Notice.jsx'
 
 export default function App() {
   const [members, setMembers] = useState(initialMembers)
@@ -53,6 +54,9 @@ export default function App() {
         layout={layout}
         onLayoutChange={setLayout}
       />
+      {selected_member !== null && !selected_member.isActive && (
+        <Notice type={'warning'}>This member is inactive.</Notice>
+      )}
       <div className={styles.content}>
         <MemberList
           members={members_after_filter}
