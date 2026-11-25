@@ -3,5 +3,5 @@
 import styles from './Footer.module.css'
 
 export default function Footer() {
-  return <footer className={styles.footer}>© 2026 Campus Coding Club</footer>
+  return <footer className={styles.footer}>© 2025 Campus Coding Club</footer>
 }
